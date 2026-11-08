@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cole Gomez - Portfolio</title>
+  <meta name="description" content="Cole Gomez's e-portfolio showcasing educational technology projects, web design, and multimedia development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">Cole<span>.</span>Gomez</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div>
+          <h1 id="hero-title">Cole Gomez</h1>
+          <p class="role">Web Design, Digital Experience, and Educational Technology</p>
+          <p class="lead">I design accessible, easy-to-use websites and learning tools for higher education and healthcare.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="files/cole_gomez_resume_2026.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <svg class="circuit" viewBox="0 0 480 400" role="img" aria-label="Decorative circuit-board illustration with orange traces leading to a central chip">
+          <g>
+            <path class="trace" pathLength="1" d="M170 175 H110 L70 135 V60"/>
+            <path class="trace" pathLength="1" d="M170 205 H120 L80 245 V330"/>
+            <path class="trace" pathLength="1" d="M310 165 H360 L400 125 V50"/>
+            <path class="trace" pathLength="1" d="M310 195 H390 L430 235 V340"/>
+            <path class="trace alt" pathLength="1" d="M240 260 V310 L280 350 H360"/>
+            <path class="trace alt" pathLength="1" d="M240 150 V80 L200 40 H140"/>
+          </g>
+          <rect class="chip" x="170" y="150" width="140" height="110" rx="10"/>
+          <text class="chip-label" x="240" y="200" text-anchor="middle">UX + EdTech</text>
+          <text class="chip-sub" x="240" y="225" text-anchor="middle">accessible by design</text>
+          <g>
+            <circle class="pad" cx="70" cy="60" r="8"/><circle class="pad" cx="80" cy="330" r="8"/>
+            <circle class="pad" cx="400" cy="50" r="8"/><circle class="pad" cx="430" cy="340" r="8"/>
+            <circle class="pad" cx="360" cy="350" r="8"/><circle class="pad" cx="140" cy="40" r="8"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-title"><h2 id="about-title">About me</h2></div>
+        <div class="about-grid">
+          <figure class="portrait" style="margin:0">
+            <img src="images/cole_profile_photo.jpg" alt="Portrait of Cole Gomez." width="300" height="375">
+          </figure>
+          <div>
+            <p>I'm a web designer and digital experience specialist with a background in higher education, educational technology, and digital content development. My work focuses on creating accessible, user-friendly websites and digital platforms that make information easier to navigate and use.</p>
+            <p>I've worked on website design, development, and UX improvements across the University of Florida, including projects for the College of Medicine and Office of Real Estate. I'm particularly interested in the intersection of web design, user experience, and educational technology, and how thoughtful digital design can improve access to information and learning.</p>
+            <p class="stat"><strong>240%</strong> <span>increase in website traffic for the UF Office of Real Estate</span></p>
+            <div class="btn-row" style="margin-top:0">
+              <a class="btn btn-primary" href="files/cole_gomez_resume_2026.pdf">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="edu-title">
+      <div class="wrap">
+        <div class="section-title"><h2 id="edu-title">Education</h2></div>
+        <div class="edu-grid">
+          <article class="edu">
+            <p>University of Florida</p>
+            <h3>M.Ed. in Curriculum and Instruction</h3>
+            <p>Educational Technology</p>
+            <span class="badge">In progress</span>
+          </article>
+          <article class="edu">
+            <p>University of Florida</p>
+            <h3>B.A. in Mathematics</h3>
+            <p>Minor in Computer and Information Science and Engineering</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" aria-labelledby="proj-title">
+      <div class="wrap">
+        <div class="section-title"><h2 id="proj-title">Projects</h2></div>
+        <div class="project-grid">
+
+          <!-- To add a screenshot, replace the placeholder <div class="thumb ph" ...> with:
+               <div class="thumb"><img src="images/qpsi-website.jpg" alt="Homepage of the QPSi website." loading="lazy"></div> -->
+
+          <article class="card featured">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>UF College of Medicine QPSi Website</h3>
+              <p>The website for the Quality and Patient Safety Initiative (QPSi), sharing information about its programs, educational opportunities, resources, and quality improvement work.</p>
+              <p class="role">I manage content, page layouts, graphics, and ongoing UX improvements, while supporting accessibility, SEO, and analytics.</p>
+              <ul class="tags" aria-label="Focus areas"><li>Web design</li><li>Accessibility</li><li>SEO</li><li>Analytics</li></ul>
+              <a class="btn" href="https://qpsi.med.ufl.edu/">Visit QPSi website<span class="visually-hidden"> (opens the live site)</span></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>QPSi Knowledgebase</h3>
+              <p>A learning and resource platform built with the UF College of Education's E-learning, Technology, and Communications (ETC) team to help healthcare professionals explore quality improvement.</p>
+              <p class="role">I contribute to platform development, UX design, branding, and visual assets such as banners, and I monitor analytics.</p>
+              <ul class="tags" aria-label="Focus areas"><li>UX design</li><li>Branding</li><li>Visual assets</li></ul>
+              <a class="btn" href="https://knowledge.qpsi.med.ufl.edu/">Visit Knowledgebase</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>UF Office of Real Estate Website</h3>
+              <p>Information about university properties, real estate services, leasing, and available resources.</p>
+              <p class="role">I managed WordPress development and administration, including the migration from Terminalfour, SEO improvements, and analytics-informed changes that increased traffic by 240%.</p>
+              <ul class="tags" aria-label="Focus areas"><li>WordPress</li><li>Migration</li><li>SEO</li></ul>
+              <!-- Replace with a real link when available: <a class="btn" href="URL">Visit website</a> -->
+              <p class="card-note">Link coming soon.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>UF Health ConneQtor QMS</h3>
+              <p>A quality management platform where UF-affiliated healthcare professionals register, manage, and track quality improvement projects.</p>
+              <p class="role">I provided UX consultation on usability, interface design, and overall user experience.</p>
+              <ul class="tags" aria-label="Focus areas"><li>UX consulting</li><li>Interface design</li></ul>
+              <p class="card-note">Requires a UF GatorLink account and VPN access.</p>
+              <a class="btn" href="https://conneqtor.ese.ufhealth.org/landing">Visit ConneQtor</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>Website Accessibility Quiz</h3>
+              <p>An interactive quiz introducing website accessibility standards and practices for more inclusive digital experiences.</p>
+              <p class="role">I designed and developed it with HTML, CSS, and JavaScript as part of my educational technology coursework.</p>
+              <ul class="tags" aria-label="Focus areas"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Interactive learning</li></ul>
+              <a class="btn" href="https://cole-gomez-design.github.io/website-accessibility-quiz/">Take the quiz</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb ph" aria-hidden="true"></div>
+            <div class="card-body">
+              <h3>POUR Drag-and-Drop Activity</h3>
+              <p>An interactive activity that introduces the four principles of web accessibility: Perceivable, Operable, Understandable, and Robust.</p>
+              <p class="role">I designed and developed it with HTML, CSS, and JavaScript so learners can practice identifying each principle.</p>
+              <ul class="tags" aria-label="Focus areas"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Multimedia learning</li></ul>
+              <a class="btn" href="https://cole-gomez-design.github.io/drag-and-drop-quiz/">Try the activity</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" aria-labelledby="int-title">
+      <div class="wrap">
+        <div class="section-title"><h2 id="int-title">Interests</h2></div>
+        <div class="interest-grid">
+          <div class="pro">
+            <h3>Professional</h3>
+            <ul>
+              <li>Web Design and Development</li><li>User Experience Design</li><li>Educational Technology</li>
+              <li>Digital Accessibility</li><li>Instructional Design</li><li>Multimedia Learning</li>
+            </ul>
+          </div>
+          <div class="personal">
+            <h3>Personal</h3>
+            <ul>
+              <li>Drawing and Digital Art</li><li>Textile Crafts and Creative Projects</li><li>Science Fiction and Fantasy</li>
+              <li>Hiking and Gardening</li><li>Scuba Diving and Kayaking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Contact</h2>
+        <p>Have a project or question? Send me an email.</p>
+        <p><a class="email" href="mailto:cole.gomez@outlook.com">cole.gomez@outlook.com</a></p>
+        <div class="btn-row"><a class="btn btn-primary" href="files/cole_gomez_resume_2026.pdf">Download CV</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Cole Gomez. All rights reserved.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('theme-toggle');
+      function isDark() {
+        var t = root.getAttribute('data-theme');
+        return t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function sync() { var d = isDark(); btn.setAttribute('aria-pressed', d); btn.textContent = d ? 'Light mode' : 'Dark mode'; }
+      btn.addEventListener('click', function () {
+        var next = isDark() ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync();
+      });
+      sync();
+    })();
+  </script>
+</body>
+</html>
